@@ -174,7 +174,7 @@ class Board extends React.Component {
       <div className="App">
         <h1>Tic Tac Toe</h1>
         <p><span>Player 1: O; Player 2: X</span></p>
-        {!this.state.wins && <p>Now {this.state.player1 ? 'Player 2' : 'Player 1'}'s turn</p>}
+        {!this.state.wins && <p>Now {this.state.player1 ? 'Player 2' : 'Player 1'} turn</p>}
         <button className="clean-btn" onClick={this.cleanTheState}>Clean up</button>
         {this.state.wins &&
           <p>{this.state.player1 ? 'Player 1' : 'Player 2'} is the winner!</p>
